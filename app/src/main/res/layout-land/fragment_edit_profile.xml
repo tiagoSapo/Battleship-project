@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/photo_booth"
+            android:padding="50dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/profile_photo_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="35dp"
+                android:src="@drawable/blank_profile"
+                android:contentDescription="Profile photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/take_photo_edit"
+                    android:textSize="10sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/take_photo"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/clear_photo_edit"
+                    android:textSize="10sp"
+                    android:backgroundTint="@color/white"
+                    android:layout_weight="1"
+                    android:text="@string/clear_photo"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutINTRO"
+            android:layout_margin="30dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textSize="15sp"
+                android:textColor="@color/dark_gray"
+                android:text="@string/profile_name" />
+
+            <EditText
+                android:id="@+id/profile_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPersonName"
+                android:hint="@string/profile_name_hint"
+                android:textColorHint="#757575"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_password"
+                android:textSize="15sp"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/profile_password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/profile_password_hint"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_new_password"
+                android:textSize="15sp"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/profile_password_confirm_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/profile_confirm_password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+

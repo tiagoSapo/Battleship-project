@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.IntroFragment">
+
+    <LinearLayout
+        android:id="@+id/intro_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:background="@drawable/battleship_intro"
+        android:padding="50dp">
+
+        <Button
+            android:id="@+id/start_new_game"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="NEW GAME" />
+
+        <Button
+            android:id="@+id/game_history"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ButtonHistory" />
+
+        <Button
+            android:id="@+id/load_game"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="LOAD GAME" />
+
+    </LinearLayout>
+</FrameLayout>

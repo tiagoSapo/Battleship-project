@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battleship_intro"
+    tools:context=".fragments.GameModeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/battleship_intro"
+            android:padding="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:id="@+id/linearLayoutINTRO"
+            android:padding="10dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/single_player"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="SINGLE-PLAYER [CPU]" />
+
+            <Button
+                android:id="@+id/arduino"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="SINGLE PLAYER [ARDUINO]" />
+
+            <Button
+                android:id="@+id/multiplayer"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="MULTIPLAYER" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
